@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme {
+  --color-brand: #1c64f2;
+  --color-brand-strong: #1e429f;
+  --color-neutral-primary: #ffffff;
+  --color-neutral-secondary-soft: #f9fafb;
+  --color-heading: #111827;
+  --color-body: #4b5563;
+  --color-default: #e5e7eb;
+  --radius-base: 0.5rem;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+   html {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+}
+@layer components{
+    .heading{
+        @apply text-5xl font-bold text-indigo-500;
+    }
+    .heading-line{
+        @apply bg-indigo-500 py-px w-12;
+    }
+}
